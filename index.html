@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Valetines day!</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div class = "card">
+            <div class = "heart-row">
+            <img src="date-party.jpg" alt="Us" class="side-photo">
+            <img src="heart.png" alt="heart" class="heart">
+            <img src="southSeas.JPG" alt="Another" class="side-photo">
+            </div>
+            <div class = "text">
+                <h1>HAPPY VALENTINES DAY</h1>
+                <p>
+                I wanted to make you a little something to show appreciation.       
+                <br><br>
+                You are amazing and I hope you are having a great time kicking ass in South Carolina!
+                <br><br>
+                I hope you enjoy the little montage of pictures I gathered up.
+                <br><br>
+                also those flowers are why I was upset you didn't have an actual class on Friday
+                <br><br>
+                but now you get fresh ones when you get home.
+                <br><br>
+                Anyways, have fun this weekend I'll be watching #13 :)
+                </p>
+                <p class = "muted">-Chambers</p>
+            </div>
+
+            <div class="photo-row">
+            <img src="flowers.jpeg" alt="Memory 1" class="bottom-photo">
+            <img src="crazy.JPG" alt="Memory 2" class="bottom-photo">
+            <img src="flowered.jpeg" alt="Memory 3" class="bottom-photo">
+            </div>
+
+            <div class = "space"></div>
+            <script src="script.js"></script>
+        </div>
+        <canvas id="confetti-canvas"></canvas>
+            <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+            <script>
+            const confettiSettings = {
+            target: 'confetti-canvas',
+            max: 120,
+            size: 1.6,
+            animate: true,
+            clock: 25,                 // slower = floatier
+            rotate: false,
+            start_from_edge: true,
+            props: ['circle'],         // circles read as hearts when pink + slow
+            colors: [
+                [255, 105, 180],         // hot pink
+                [255, 182, 193],         // light pink
+                [255, 20, 147],          // deep pink
+                [255, 0, 80]             // red
+            ],
+            respawn: true
+            };
+
+            const confetti = new ConfettiGenerator(confettiSettings);
+            confetti.render();
+            </script>
+
+    </body>
+</html>
